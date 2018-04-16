@@ -9,7 +9,8 @@ pipeline {
           }
         stage('Clean') {
             steps {
-                mvn clean
+                sh 'cd ./my-app'
+                echo $pwd
             }
         }
         stage('Build') {
