@@ -9,7 +9,8 @@ pipeline {
           }
         stage('Clean') {
             steps {
-                sh 'cd ./my-app/2'
+                sh 'cd ./my-app' 
+                mvn clean
             }
         }
         stage('Build') {
