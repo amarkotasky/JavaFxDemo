@@ -9,8 +9,7 @@ pipeline {
           }
         stage('Clean') {
             steps {
-                sh 'cd ./my-app'
-                echo $pwd
+                sh 'cd ./my-app/2'
             }
         }
         stage('Build') {
