@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'cd ./my-app && mvn install' 
             }
         }
         stage('Test') {
@@ -25,6 +25,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+            }
+        }
+        stage('notify') {
+            steps {
+                echo 'Notification....'
             }
         }
     }
