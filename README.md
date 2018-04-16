@@ -1,2 +1,2 @@
 # JavaFxDemo
-## Test
+## Test project
