@@ -10,7 +10,7 @@ pipeline {
         stage('Clean') {
             steps {
                 sh 'cd ./my-app' 
-                sh 'mvn clean'
+                sh 'echo $pwd'
             }
         }
         stage('Build') {
