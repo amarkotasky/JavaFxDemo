@@ -7,6 +7,11 @@ pipeline {
                   checkout scm
               }
           }
+        stage('Clean') {
+            steps {
+                mvn clean
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
